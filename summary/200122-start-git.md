@@ -46,6 +46,9 @@
 		- 파일이나 폴더이동, 해당 명령어로 해야 파일의 히스토리가 살아있음 (강제 이동시 깃에서 삭제된 파일로 인식)
 	- git checkout --.
 		- 로컬의 변경 내용을 변경 전 상태로 되돌림
+	- git pull
+		- 로컬과 git의 폴더구성상태가 다를때 씀
+		- error: failed to push some refs to 가 나옴
 
 
 ### start blog with hexo

@@ -1,47 +1,60 @@
 # start git
-# https://github.com/ulgoon/
+# https://github.com/ulgoon 강사님 블로그
 
 ## To Day I Learned..
 
-- history of Linux
+### history of Linux
 
-- bash command
-	- '$ ls'
-	- '$ cd'
-	- '$ cd ..'
-	- '$ rm'
-	- '$ rm_r'
-	- '$ ls'
-	- '$ clear'
-	- '$ ls -a'
-	- '$ ls -l'
-	- '$ mv'
-	- '$ mkdir'
+### bash command
+	- '$ ls' 현재 폴더의 리스트 확인
+	- '$ ls -a' 숨김파일까지 보기
+	- '$ ls -l' 파일 모두 보기
+	- '$ cd' 폴더 이동
+	- '$ cd ..' 상위 폴더로 이동 ..
+	- '$ rm' 파일 삭제
+	- '$ rm_r' 파일 모두 삭제
+	- '$ clear' 프롬프트 창 클리어
+	- '$ mv' 파일 이동
+	- '$ mkdir' 폴더 생성
 
-- vim text editor
+### vim text editor
 	- normal mode : command (press ESC from ant mode))
 	- insert mode : edit text file (press i on normal mode)
 	- visual mode : do with text block (press v on normal mode
 
-- git command
-	- start git with '$ git init'
-	- start git with '$ git clone'
-	- git remote
-	- git remote -v
-	- git add
-	- git commint
-	- git push origin master
-	- git status
-	- git mv file folder
-	- git checkout --.
-	- git remote
+### git command
+	- start git with '$ git init' 
+		- 폴더에 git 사용 준비
+	- start git with '$ git clone' 
+		- 웹상의 git 파일 복사
+	- git remote add 단축이름 url 
+		- URL을 단축이름으로 저장
+	- git remote -v 
+		- 단축이름과 url 확인
 	- git remote get-url
+		- remote에 저장된 단축이름과 url 생성
+	- git add 
+		- 수정한 파일 선택
+	- git commint  
+		- 변경 파일 commit, push 준비 수정한 코드 설명
+	- git push origin master 
+		- 해당 git repo로 push
+	- git status 해당 git 폴더 상태 보기 
+		- 변경: 빨간색
+		- add : 초록색
+	- git mv file folder 
+		- 파일이나 폴더이동, 해당 명령어로 해야 파일의 히스토리가 살아있음 (강제 이동시 깃에서 삭제된 파일로 인식)
+	- git checkout --.
+		- 로컬의 변경 내용을 변경 전 상태로 되돌림
 
-- TIL convention
 
-- start blog with hexo
+### start blog with hexo
+	- hexo install 
+		- hexo 설치
 	- installation
+		- 
 	- configuration
+	
 	- start project
 	- create post
 	- theme
@@ -63,4 +76,4 @@
 
 ## Tomorrow I'll Learn..
 
-- math
+- math..

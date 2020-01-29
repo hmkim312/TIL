@@ -9,7 +9,7 @@
 	- <img src="https://latex.codecogs.com/gif.latex?u_1%20%3D%20w_1x_1&plus;w_2x_2" /> 
 - PCA의 수학적 설명
 	- 데이터가 원점을 중심으로 존재하는 경우에는 벡터에 변환행렬을 곱하는 연산으로 투영벡터를 계산할 수 있다.
-	- <img src="https://latex.codecogs.com/svg.latex?\hat x_i = Wx_i" />
+	- <img src = "https://latex.codecogs.com/gif.latex?%5Chat%20x_i%20%3D%20Wx_i" />
 	- <img src="https://latex.codecogs.com/gif.latex?\hat x_i = Wx_i" /> 
 	- PCA의 목표는 변환 결과인 차원축소 벡터  <img src="https://latex.codecogs.com/gif.latex?\hat x_i" />의 벡터의 정보가 원래의 벡터 <img src="https://latex.codecogs.com/gif.latex? x_i" />가졌던 정보와 가장 유사하게 되는 변환행렬 <img src="https://latex.codecogs.com/gif.latex?W" />를 찾는 것이다.
 

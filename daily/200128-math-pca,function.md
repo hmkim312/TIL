@@ -13,7 +13,7 @@
 	- PCA의 목표는 변환 결과인 차원축소 벡터  <img src="https://latex.codecogs.com/gif.latex?%5Chat%20x_i" />의 벡터의 정보가 원래의 벡터 <img src="https://latex.codecogs.com/gif.latex?x_i" />가졌던 정보와 가장 유사하게 되는 변환행렬 <img src="https://latex.codecogs.com/gif.latex?W" />를 찾는 것이다.
 
 	- 목적함수는 다음과 같다. 
-	- <img src="https://latex.codecogs.com/gif.latex?\arg\min_{W} || X - X W^{T} W ||^2" />
+	- <img src="https://latex.codecogs.com/gif.latex\arg\min_{W} || X - X W^{T} W ||^2" />
   
 - 사이킷런의 PCA 기능
 	- 입력 인수

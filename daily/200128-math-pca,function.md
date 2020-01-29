@@ -67,13 +67,13 @@
 	- 역함수는 역수와 기호의 의미가 다름
 	- 역함수는 항상 존재하는것은 아니다.
 	- <img src="https://latex.codecogs.com/gif.latex?y%20%3D%20f%28x%29%2C%20%5C%3B%5C%3B%5C%3B%20%5Crightarrow%20%5C%3B%5C%3B%5C%3B%20x%20%3D%20f%5E%7B-1%7D%28y%29" />
-	- <img src="https://latex.codecogs.com/gif.latex?f%5E%7B-1%7D%28x%29%20%5Cneq%20f%28x%29%5E%7B-1%7D%20%3D%20%5Cdfrac%7B1%7D%7Bf%28x%29%7D " />
+	- <img src="https://latex.codecogs.com/gif.latex?f%5E%7B-1%7D%28x%29%20%5Cneq%20f%28x%29%5E%7B-1%7D%20%3D%20%5Cdfrac%7B1%7D%7Bf%28x%29%7D" />
 
 - 함수의 그래프
 	- 함수의 시각화는 그래프와 플롯을 사용한다
 
 - 역함수의 그래프
-	- 원래의 함수에서 <img src="https://latex.codecogs.com/gif.latex? x" />축과 <img src="https://latex.codecogs.com/gif.latex? y" />이 바뀐 것이므로 <img src="https://latex.codecogs.com/gif.latex?y%20%3D%20x" />가 나타나는 직선(원점을 통과하는 기울기 1인 직선)을 대칭축으로 대칭인 함수의 그래프와 같다
+	- 원래의 함수에서 <img src="https://latex.codecogs.com/gif.latex?x" />축과 <img src="https://latex.codecogs.com/gif.latex?y" />이 바뀐 것이므로 <img src="https://latex.codecogs.com/gif.latex?y%20%3D%20x" />가 나타나는 직선(원점을 통과하는 기울기 1인 직선)을 대칭축으로 대칭인 함수의 그래프와 같다
 
 - 다항식 함수
 	- 상수항 <img src="https://latex.codecogs.com/gif.latex?c_0" />, 일차항 <img src="https://latex.codecogs.com/gif.latex?c_1" />, 이차항 <img src="https://latex.codecogs.com/gif.latex?c_2x%5E2%2C%5Ccdots" />등의 거듭제곱 항의 선형 조합으로 이루어진 함수다.

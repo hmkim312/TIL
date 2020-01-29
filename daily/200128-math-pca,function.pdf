@@ -6,15 +6,16 @@
 
 - 잠재변수를 찾는것
 	- 잠재변수란 측정되지는 않았지만 측정된 데이터의 기저에 숨어서 측정 데이터를 결정 짓는 변수
-	- <img src="https://latex.codecogs.com/gif.latex?u_1 = w_1x_1+w_2x_2" /> 
+	- $u_1 = w_1x_1+w_2x_2$
+
 - PCA의 수학적 설명
 	- 데이터가 원점을 중심으로 존재하는 경우에는 벡터에 변환행렬을 곱하는 연산으로 투영벡터를 계산할 수 있다.
-	- <img src="https://latex.codecogs.com/gif.latex?\hat x_i = Wx_i" /> 
-	- PCA의 목표는 변환 결과인 차원축소 벡터  <img src="https://latex.codecogs.com/gif.latex?\hat x_i" />의 벡터의 정보가 원래의 벡터 <img src="https://latex.codecogs.com/gif.latex? x_i" />가졌던 정보와 가장 유사하게 되는 변환행렬 <img src="https://latex.codecogs.com/gif.latex?W" />를 찾는 것이다.
+	- $\hat x_i = Wx_i$
+	- PCA의 목표는 변환 결과인 차원축소 벡터 $\hat x_i$의 벡터의 정보가 원래의 벡터 $x_i$$가졌던 정보와 가장 유사하게 되는 변환행렬 $W$를 찾는 것이다.
 
 	- 목적함수는 다음과 같다. 
-	- <img src="https://latex.codecogs.com/gif.latex? \arg\min_{W} || X - X W^{T} W ||^2" />
-  
+	- $\begin{align}\arg\min_{W} || X - X W^{T} W ||^2\end{align}$
+
 - 사이킷런의 PCA 기능
 	- 입력 인수
 		- n_components : 정수
@@ -40,44 +41,73 @@
 	- 변수 : 어떤 숫자를 대표하는 기호
 	- 입력변수 : 입력값을 대표하는 변수
 	- 출력변수 : 출력값을 대표하는 변수
-	- <img src="https://latex.codecogs.com/gif.latex?f(x) = 2x" />
-	-  <img src="https://latex.codecogs.com/gif.latex?y=2x" />
+	- $$$ f(x) = 2x$$$
+	- $$$ y = 2x$$$
 	
 - 연속과 불연속
 	- 불연속 : 함수의 값이 중간에 갑자기 변하는 것
-	- 연속 :  <img src="https://latex.codecogs.com/gif.latex?x" />가 조금 바뀌면  <img src="https://latex.codecogs.com/gif.latex?y" />도 조금 바뀌는 것
+	- 연속 : $$$x$$$가 조금 바뀌면 $$$y$$$도 조금 바뀌는 것
 
 - 부호함수
-	- 입력이 양수이면 1, 음수이면 -1, 0이면 0을 출력하는 <img src="https://latex.codecogs.com/gif.latex?x = 0" />에서 불연속 함수, 넘파이에서 sign()으로 사용
+	- 입력이 양수이면 1, 음수이면 -1, 0이면 0을 출력하는 $$$x=0$$$에서 불연속 함수, 넘파이에서 **sign()**으로 사용
 
-   <img src="https://latex.codecogs.com/gif.latex? \text{sgn}(x)=\begin{cases} 1, & x > 0, \\ 0, & x = 0, \\ -1, & x < 0\end{cases}" />
+	- $$$
+\begin{align}
+\text{sgn}(x)
+=
+\begin{cases}
+1, & x > 0, \\
+0, & x = 0, \\
+-1, & x < 0
+\end{cases}
+\end{align}
+$$$
 
 - 단위계단함수
 	- 입력이 0 이상이면 1을, 0 미만이면 0을 출력하는 함수
-  
-  <img src="https://latex.codecogs.com/gif.latex? H(x) =\begin{cases} 1, & x \ge 0, \\0, & x < 0\end{cases}" />
-	
+
+	- $$$
+\begin{align}
+H(x) =
+\begin{cases}
+1, & x \ge 0, \\
+0, & x < 0
+\end{cases}
+\end{align}
+$$$
 
 - 지시함수
 	- 함수 이름에 아래 첨자로 미리 지정된 값이 들어오면 출력이 1이되고 아니면 출력이 0이 되는 함수
- <img src="https://latex.codecogs.com/gif.latex?\mathbb{I}_i(x)=\delta_{ix} =\begin{cases}1 & \text{ if } x = i \\ 0 & \text{ if } x \neq i \\ \end{cases}  " />
+
+	- $$$
+\begin{align}
+\mathbb{I}_i(x)
+=
+\delta_{ix} 
+=
+\begin{cases}
+1 & \text{ if } x = i \\ 
+0 & \text{ if } x \neq i \\ 
+\end{cases}
+\end{align}
+$$$
 
 - 역함수
 	- 어떤 함수의 입력/출력 관계와 정반대의 입출력 관계를 가지는 함수
 	- 역함수는 역수와 기호의 의미가 다름
 	- 역함수는 항상 존재하는것은 아니다.
-	- <img src="https://latex.codecogs.com/gif.latex?y = f(x), \;\;\; \rightarrow \;\;\; x = f^{-1}(y)  " />
-	- <img src="https://latex.codecogs.com/gif.latex?f^{-1}(x) \neq f(x)^{-1} = \dfrac{1}{f(x)}  " />
+	- $$$ y = f(x), \;\;\; \rightarrow \;\;\; x = f^{-1}(y)$$$
+	- $$$ f^{-1}(x) \neq f(x)^{-1} = \dfrac{1}{f(x)}$$$
 
 - 함수의 그래프
 	- 함수의 시각화는 그래프와 플롯을 사용한다
 
 - 역함수의 그래프
-	- 원래의 함수에서 <img src="https://latex.codecogs.com/gif.latex? x" />축과 <img src="https://latex.codecogs.com/gif.latex? y" />이 바뀐 것이므로 <img src="https://latex.codecogs.com/gif.latex? y = x" />가 나타나는 직선(원점을 통과하는 기울기 1인 직선)을 대칭축으로 대칭인 함수의 그래프와 같다
+	- 원래의 함수에서 $$$x$$$축과 $$$y$$$이 바뀐 것이므로 $$$ y = x$$$가 나타나는 직선(원점을 통과하는 기울기 1인 직선)을 대칭축으로 대칭인 함수의 그래프와 같다
 
 - 다항식 함수
-	- 상수항 <img src="https://latex.codecogs.com/gif.latex? c_0" />, 일차항 <img src="https://latex.codecogs.com/gif.latex? c_1" />, 이차항 <img src="https://latex.codecogs.com/gif.latex? c_2x^2,\cdots" />등의 거듭제곱 항의 선형 조합으로 이루어진 함수다.
-	- <img src="https://latex.codecogs.com/gif.latex?f(x) = c_0 + c_1x+c_2x^2+ \cdots+ c_nx^n" />
+	- 상수항 $$$c_0$$$, 일차항 $$$c_1x$$$, 이차항 $$$c_2x^2,\cdots$$$ 등의 거듭제곱 항의 선형 조합으로 이루어진 함수다.
+	- $$$ f(x) = c_0 + c_1x+c_2x^2+ \cdots+ c_nx^n$$$
 
 - 최대 함수
 	- 두 인수중 큰값을 출력하는 함수

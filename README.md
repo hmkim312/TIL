@@ -6,3 +6,5 @@
   - Update python programing study to ipython
 - math
   - Update math for Data Science study to ipython and Handwriting
+- database
+  - UPdate database study to MySQL, mongodb  

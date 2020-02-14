@@ -1,4 +1,4 @@
-# 200212112 - MySQL symtax
+# 200214 - MySQL symtax
 # To Day I Learned..
 ## Mysql 
 

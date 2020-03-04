@@ -7,4 +7,8 @@
 - math
   - Update math for Data Science study to ipython and Handwriting
 - database
-  - UPdate database study to MySQL, mongodb  
+  - Update database study to MySQL, mongodb  
+- machinelearning
+  - Update machinelearning study
+- crawling
+  - Update crawling study
